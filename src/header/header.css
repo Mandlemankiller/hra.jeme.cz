@@ -1,0 +1,114 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 20px 45px;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(0px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    backdrop-filter: blur(5px);
+    transition: 0.15s;
+}
+
+.header .head {
+    border-radius: 6px;
+    width: 80px;
+    transition: 0.8s;
+}
+
+.header .head:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    scale: 1.1 1.1;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: disc;
+    position: relative;
+    text-decoration: none;
+    list-style-type: disc;
+    transition: 1s;
+}
+
+.header ul li {
+    margin-right: 50px;
+    display: list-item;
+    list-style: none;
+}
+
+
+.header ul li a {
+    color: rgb(var(--light));
+    font-size: 1.05em;
+    transition: 0.8s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header ul li a:hover {
+    color: rgb(var(--neutral));
+}
+
+.header ul li a i {
+    padding-right: 7px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.burger div {
+    background-color: rgb(var(--light));
+    width: 30px;
+    height: 3.3px;
+    border-radius: 10px;
+    transition: 1s;
+    pointer-events: none;
+}
+
+.burger-active {
+    transform: rotate(90deg);
+}
+
+.burger:hover div {
+    background-color: rgb(var(--neutral));
+}
+
+@media (max-width: 1050px) {
+    .header ul {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute !important;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        gap: 5vh;
+        font-size: 2em;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(var(--dark), 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    .header ul li {
+        margin-left: 5vw;
+    }
+
+    .header ul li a {
+        color: rgb(var(--superlight));
+    }
+
+    .burger {
+        display: flex;
+    }
+}

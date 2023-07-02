@@ -1,0 +1,80 @@
+.title {
+    color: rgb(var(--superlight));
+    font-size: 3.5em;
+    margin-left: 1.5vw;
+    margin-top: 1vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.members .member {
+    transition: 1s;
+    background-color: rgba(var(--dark), 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.members .member .tooltip {
+    opacity: 0;
+    width: 90%;
+    background-color: rgba(var(--dark), 0.9);
+    color: rgb(var(--superlight));
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0px;
+    z-index: 1;
+    margin-bottom: 10px;
+    transition: 1s;
+    top: -50px;
+    transform: translateY(30px);
+    position: fixed;
+}
+
+.members .member:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.members .member .username {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.members .member .username:hover {
+    color: rgb(var(--light));
+}
+
+.members .member .head-link {
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    justify-content: center;
+    scale: 1 1;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.members .member .head-link:hover {
+    scale: 1.08 1.08;
+}
+
+.members .member .head {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 6px;
+    transition: 1s;
+}

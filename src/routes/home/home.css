@@ -1,0 +1,86 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.logo {
+    margin-top: 2%;
+    width: 50vw;
+    min-width: 300px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    animation-name: load_logo;
+    animation-duration: 2s;
+}
+
+@keyframes load_logo {
+    0% {
+        opacity: 0.3;
+        margin-top: 4%;
+    }
+
+    100% {
+        margin-top: 2%;
+        opacity: 1;
+    }
+}
+
+.logo:hover {
+    scale: 1.008 1.008;
+    filter: drop-shadow(1px 1px 5px rgb(var(--neutral)));
+}
+
+.menu {
+    transition: 1.5s;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    gap: 3vw;
+    pointer-events: none;
+}
+
+.menu div {
+    background-color: rgba(var(--neutral), 0.35);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    width: 10vw;
+    min-width: 70px;
+    height: 10vw;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    transition: 1s;
+    gap: 0.3vw;
+    flex-direction: column;
+}
+
+.menu div:hover {
+    border-radius: 20px;
+    background-color: rgba(var(--neutral), 0.15);
+    color: rgb(var(--superlight));
+}
+
+.menu div:hover p {
+    margin-top: 0px;
+}
+
+.menu div i {
+    color: rgb(var(--light));
+    transition: 1s;
+    font-size: max(3vw, 20px);
+}
+
+.menu div p {
+    color: rgb(var(--light));
+    transition: 1s;
+    margin-top: 1vw;
+    font-size: max(1.7vw, 10px);
+}

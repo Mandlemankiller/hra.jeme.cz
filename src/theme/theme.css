@@ -1,0 +1,114 @@
+.palette {
+    color: gray;
+    font-size: 2em;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    transition: 1s;
+    cursor: pointer;
+    opacity: 0.2;
+    transform-origin: 50.5% 47%;
+    scale: 1 1;
+}
+
+.palette:hover {
+    opacity: 1;
+    color: rgb(var(--light));
+}
+
+.window {
+    opacity: 1;
+    pointer-events: all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    transition: 1s;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookies {
+    width: 70%;
+    background-color: rgba(var(--dark), 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cookies h1 {
+    align-self: center;
+    margin: 20px;
+    color: rgb(var(--superlight));
+}
+
+.cookies p {
+    font-size: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;    
+    color: white;
+}
+.accept {
+    color: white;
+    font-weight: bold;
+    background-color: #2db42b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+    transition: 1s;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 20%;
+    min-width: 200px;
+}
+
+.accept:hover {
+    scale: 1.05 1.05;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (max-width: 1050px) {
+    .buttons {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media (min-width: 1050px) {
+    .buttons {
+        flex-direction: row;
+    }  
+}
+.reject {
+    color: white;
+    font-weight: bold;
+    background-color: #e62927;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+    transition: 1s;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 20%;
+    min-width: 200px;
+}
+
+.reject:hover {
+    transform: translateY() translateX();
+}
