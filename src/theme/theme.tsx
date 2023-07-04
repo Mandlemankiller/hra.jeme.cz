@@ -8,7 +8,7 @@ import background_20 from "../media/background/1.20.jpg";
 import rickroll from "../media/rickroll.mp4";
 
 const defaultThemeId: number = 3;
-const cookiesId: number = 2;
+const cookiesId: number = 3;
 
 interface ThemeProps {
     palette: boolean;
@@ -62,7 +62,7 @@ export default function Theme({ palette }: ThemeProps) {
                     <h1>Cookies! 🍪</h1>
                     <p>We use cookies to ensure the functionality of the website. By clicking on the "Accept" button you agree to our use of cookies.</p>
                     <p>Cookies are small data files that are stored on your device when you visit our website.</p>
-                    <p>We use cookies to remember your selected theme so that we can display it the next time you visit our website.</p>
+                    <p>We use cookies to remember your selected theme and the checkbox "Show former mebers" value so that we can display it correctly the next time you visit our website.</p>
                     <p>We do not use cookies for any other purpose.</p>
                     <p>By using our website, you consent to our use of cookies for this purpose. Please note that disabling cookies will play you a nice song.</p>
                     <div className="buttons">
@@ -193,13 +193,13 @@ async function click(event: React.MouseEvent<HTMLElement, MouseEvent>) {
     palette.classList.remove("disabled");
 }
 
-function setCookie(name: string, value: string) {
+export function setCookie(name: string, value: string) {
     var CookieDate = new Date();
     CookieDate.setFullYear(CookieDate.getFullYear() + 100);
     document.cookie = name + "=" + value + "; path=/; expires=" + CookieDate.toUTCString() + ";";
 }
 
-function getCookie(name: string) {
+export function getCookie(name: string) {
     let cname = name + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
