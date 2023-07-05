@@ -29,7 +29,7 @@ addMember("e7fd11ff-2a19-4a82-8fd6-d403114322a1", "Member", "May 3, 2021")
 addMember("75e067fe-b973-481a-be96-a0c26cef8f4e", "Member", "January 9, 2021")
 addMember("7d23336f-fdbb-4310-befa-139fb7af6f28", "Member", "January 9, 2021")
 addMember("eb56c3b0-40a1-4917-8881-a678a6b1384d", "Member", "January 9, 2021")
-addMember("ccb5dbfd-6d5f-4765-9629-4aad8bb95947", "Member", "April 10, 2022")
+addMember("ccb5dbfd-6d5f-4765-9629-4aad8bb95947", "Member", "April 10, 2022", "July 5, 2023", true) // bajousek
 addMember("0d2871d9-98ae-4477-a99e-341d898e7cc3", "Member", "May 12, 2023")
 addMember("45ce907d-5e5e-4647-adf2-c61033b2f204", "Member", "June 12, 2023")
 addMember("4e58cad9-2166-4b01-81d8-3bcce36a34a6", "Member", "February 9, 2020", "April 17, 2021", true) // Trideser

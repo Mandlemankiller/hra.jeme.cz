@@ -120,7 +120,6 @@ export default function About() {
                             "3cce3e0d-6f41-4023-8378-a154d2c53553", // Caselyn
                             "17c28969-c17e-4e83-af98-760558ea208d", // Libertas007
                             "40808836-2711-4193-94ae-58273535a9f3", // Tomkudleq
-                            "ccb5dbfd-6d5f-4765-9629-4aad8bb95947", // bajousek
                             "30f90bd6-19b7-4351-a630-8823a9c5b771", // Gemitist
                             "0d2871d9-98ae-4477-a99e-341d898e7cc3", // kopikiadu
                             "45ce907d-5e5e-4647-adf2-c61033b2f204" // MonsieurAustrian

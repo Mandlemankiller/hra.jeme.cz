@@ -159,7 +159,7 @@
     align-self: flex-start !important;
     margin: 0px !important;
     margin-left: 20% !important;
-    font-size: 30px;
+    font-size: max(min(2vw, 1.6em), 15px) !important;
 }
 
 .season-content h1 {
